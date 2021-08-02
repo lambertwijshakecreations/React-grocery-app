@@ -13,13 +13,13 @@ class List extends React.Component {
 				{ id: 5, title: "bakpapier" }
 			]
 		};
-
-		const listItem = groceryItems.map((item) => {
-			item.title;
-		});
 	}
 
 	render() {
+		const listItem = groceryItems.map((item) => {
+			item.title;
+		});
+
 		return (
 			<ul>
 				<li>
