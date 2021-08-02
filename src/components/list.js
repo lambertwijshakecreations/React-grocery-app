@@ -11,7 +11,7 @@ class List extends Component {
 		return (
 			<div>
 				<ul>
-					<ListItem />
+					<ListItem title="melk" />
 				</ul>
 			</div>
 		);
