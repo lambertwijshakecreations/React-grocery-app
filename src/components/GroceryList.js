@@ -1,9 +1,10 @@
 import React from "react";
+import List from "./list";
 
 const GroceryList = () => {
 	return (
 		<div>
-			<p>GroceryList</p>
+			<List />
 		</div>
 	);
 };
