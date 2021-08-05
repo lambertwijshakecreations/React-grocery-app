@@ -19,7 +19,6 @@ class List extends Component {
 		const listItems = this.state.groceryItems.map((item) => (
 			<ListItem key={item.id} value={item.title} />
 		));
-		console.log({ listItems });
 
 		return (
 			<div>
