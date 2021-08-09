@@ -1,10 +1,13 @@
 import React from "react";
-import Container from "./components/Container";
 import "./App.css";
+import Container from "./Container";
 
 function App() {
 	return (
-		<div>
+		<div className="app">
+			<header className="header">
+				<h1>Boodschappenlijst</h1>
+			</header>
 			<Container />
 		</div>
 	);
