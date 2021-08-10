@@ -57,11 +57,22 @@ class Container extends React.Component {
 			this.setState({ shoppingListItems: [] });
 		};
 
+		const addGrocery = (grocery) => {
+			const groceryitem = {
+				id: this.state.groceryItems.length + 1,
+				title: grocery
+			};
+			this.setState({
+				groceryItems: this.state.groceryItems.concat(groceryitem)
+			});
+		};
+
 		return (
 			<div className="container">
 				<div className="groceries-list groceries">
 					<h1>Boodschappenlijst</h1>
 					<GroceryList
+						addGrocery={addGrocery}
 						groceryItems={this.state.groceryItems}
 						handleClickGroceryItem={handleClickGroceryItem}
 					/>

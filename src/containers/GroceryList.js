@@ -2,10 +2,10 @@ import React from "react";
 import List from "../components/List/List";
 import InputField from "../components/inputField";
 
-const GroceryList = ({ groceryItems, handleClickGroceryItem }) => {
+const GroceryList = ({ groceryItems, handleClickGroceryItem, addGrocery }) => {
 	return (
 		<div>
-			<InputField />
+			<InputField onSubmit={addGrocery} />
 			<List items={groceryItems} handleClickItem={handleClickGroceryItem} />
 		</div>
 	);
