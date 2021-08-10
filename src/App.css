@@ -8,6 +8,15 @@ header{
   text-shadow: 0 0 3px #000;
 }
 
+.groceries-input input{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  padding:5px;
+  box-shadow: 0  0 1px black;
+  border-radius: 5px;
+}
+
 .groceries-list {
   margin-bottom:70px;
   margin-top:25px;
