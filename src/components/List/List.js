@@ -2,10 +2,6 @@ import React from "react";
 import ListItem from "./ListItem";
 
 class List extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {};
-	}
 	render() {
 		const { items, readonly, handleClickItem } = this.props;
 		const listItems = items

@@ -1,10 +1,10 @@
 import React from "react";
 import List from "../components/List/List";
 
-const GroceryList = ({ groceryItems }) => {
+const GroceryList = ({ groceryItems, handleClickGroceryItem }) => {
 	return (
 		<div>
-			<List items={groceryItems} />
+			<List items={groceryItems} handleClickItem={handleClickGroceryItem} />
 		</div>
 	);
 };

@@ -1,10 +1,13 @@
 import React from "react";
 import List from "../components/List/List";
 
-const ShoppingCart = ({ groceryItems }) => {
+const ShoppingCart = ({ groceryItems, handleClickEmptyCart }) => {
 	return (
 		<div>
-			<List items={groceryItems} />
+			<button className="button-primary" onClick={handleClickEmptyCart}>
+				Empty Cart
+			</button>
+			<List readonly={true} items={groceryItems} />
 		</div>
 	);
 };
